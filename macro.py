@@ -13,10 +13,12 @@ times = []
 for i in loop:
     temp += int(input("분? >>> ")) * 60
     temp += int(input("초? >>> "))
+    print(i + 1, "번 째 입력 받음 : ", temp, "초")
+    print("")
     times.append(temp)
     temp = 0
 
 # 실행
-for i in range(0, loop):
-    print(i+1,"번째 작동 중... ",loop+"번 작동 후 정지")
-    pyautogui.click(1718,1209,button= 'left', interval= times[i])
+for j in range(0, loop):
+    print(j+1,"번째 작동 중... ",loop+"번 작동 후 정지")
+    pyautogui.click(1718,1209,button= 'left', interval= times[j])
